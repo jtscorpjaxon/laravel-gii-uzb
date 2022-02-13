@@ -1,0 +1,36 @@
+{
+    "name": "jtscorpjaxon/laravel-gii",
+    "authors": [
+        {
+            "name": "Jaxongir"
+        }
+    ],
+    "keywords": ["laravel", "gii", "code generator", "GUI","CRUD"],
+    "license":"MIT",
+    "description": "visual code generator tools gii for laravel",
+    "require": {
+        "sebastian/diff": "^3.0",
+        "sunshinev/laravel-fe-render":"^1.0",
+        "doctrine/dbal": "^2.10"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8|^4.0"
+    },
+    "autoload": {
+        "psr-4":{
+            "Jtscorp\\Gii\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jtscorp\\Gii\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jtscorp\\Gii\\Providers\\GiiServiceProvider"
+            ]
+        }
+    }
+}
